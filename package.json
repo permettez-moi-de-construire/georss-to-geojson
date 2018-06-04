@@ -2,7 +2,7 @@
   "name": "@permettezmoideconstruire/georss-to-geojson",
   "version": "1.0.2",
   "description": "Library to convert GeoRSS (XML) file into GeoJSON format.",
-  "main": "lib/library.js",
+  "main": "lib/@permettezmoideconstruire/georss-to-geojson.js",
   "scripts": {
     "build": "webpack --env dev && webpack --env build && npm run test",
     "exemple": "babel-node exemple/index.js exemple/test.xml",
