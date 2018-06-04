@@ -1,0 +1,55 @@
+{
+  "name": "georss-to-geojson",
+  "version": "1.0.0",
+  "description": "Library to convert GeoRSS (XML) file into GeoJSON format.",
+  "main": "lib/library.js",
+  "scripts": {
+    "build": "webpack --env dev && webpack --env build && npm run test",
+    "exemple": "babel-node exemple/index.js exemple/test.xml",
+    "dev": "webpack --progress --colors --watch --env dev",
+    "test": "mocha --require babel-core/register --colors ./test/*.spec.js",
+    "test:watch": "mocha --require babel-core/register --colors -w ./test/*.spec.js",
+    "lint": "standard src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/permettez-moi-de-construire/georss-to-geojson.git"
+  },
+  "keywords": [
+    "webpack",
+    "es6",
+    "starter",
+    "library",
+    "universal",
+    "umd",
+    "commonjs"
+  ],
+  "author": "Loïc PIREZ",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/permettez-moi-de-construire/georss-to-geojson/issues"
+  },
+  "homepage": "https://github.com/permettez-moi-de-construire/georss-to-geojson",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.3",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-env": "^1.6.1",
+    "chai": "^4.1.2",
+    "eslint": "^4.13.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "mocha": "^4.0.1",
+    "webpack": "^3.10.0",
+    "yargs": "^10.0.3"
+  },
+  "dependencies": {
+    "xml-js": "^1.6.4"
+  }
+}
